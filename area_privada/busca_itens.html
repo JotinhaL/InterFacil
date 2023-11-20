@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Lista de Itens - Sistema de Intercâmbio</title>
+    <link rel="stylesheet" href="../bootstrap/bootstrap-5.3.2-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../bootstrap/bootstrap-5.3.2-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../bootstrap/bootstrap-5.3.2-dist/css/bootstrap-utilities.css">
+    <link rel="stylesheet" href="../bootstrap/bootstrap-5.3.2-dist/css/bootstrap-grid.rtl.css">
+    <link rel="stylesheet" href="../bootstrap/bootstrap-5.3.2-dist/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="../bootstrap/bootstrap-5.3.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../bootstrap/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap/bootstrap-5.3.2-dist/css/bootstrap.rtl.css">
+    <link rel="stylesheet" href="../bootstrap/bootstrap-5.3.2-dist/css/bootstrap-utilities.min.css">
+
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+
+<header class="bg-dark text-white text-center py-5">
+    <h1>Lista de Itens</h1>
+</header>
+
+<nav class="navbar navbar-expand-lg navbar-light" id="nv">
+    <a class="navbar-brand text-white" href="./index.html">InterFácil</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link text-white" href="./perfil.html">Perfil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="./cadastro_vaga.html">Cadastrar vaga</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<section class="container my-5">
+    <div class="row mb-4">
+        <div class="col-md-6 mx-auto">
+            <form class="form-inline-block">
+                <div class="form-group input-group">
+                    <input type="text" class="form-control mr-2" placeholder="Buscar item">
+                    <button type="submit" class="btn btn-outline-primary">Buscar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="row" id="pool_vagas"></div>
+</section>
+
+<footer class="bg-dark text-white text-center py-1 fixed-bottom">
+    <p class="m-0">&copy; 2023 Sistema de Intercâmbio</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="../js/busca_itens.js"></script>
+</body>
+</html>

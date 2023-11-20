@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Perfil do Usuário - Sistema de Intercâmbio</title>
+    <link rel="stylesheet" href="../bootstrap/bootstrap-5.3.2-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../bootstrap/bootstrap-5.3.2-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../bootstrap/bootstrap-5.3.2-dist/css/bootstrap-utilities.css">
+    <link rel="stylesheet" href="../bootstrap/bootstrap-5.3.2-dist/css/bootstrap-grid.rtl.css">
+    <link rel="stylesheet" href="../bootstrap/bootstrap-5.3.2-dist/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="../bootstrap/bootstrap-5.3.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../bootstrap/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap/bootstrap-5.3.2-dist/css/bootstrap.rtl.css">
+    <link rel="stylesheet" href="../bootstrap/bootstrap-5.3.2-dist/css/bootstrap-utilities.min.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+
+<header class="bg-dark text-white text-center py-5">
+    <h1>Perfil do Usuário</h1>
+</header>
+
+<nav class="navbar navbar-expand-lg navbar-light" id="nv">
+    <a class="navbar-brand text-white" href="./index.html">InterFácil</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link text-white" href="./busca_itens.html">Intercambios</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<section class="container my-5">
+    <div class="row">
+        <div class="col-md-4 mx-auto text-center">
+            <h2>Usuário:</h2>
+            <img src="../imgs/perfil.png" alt="Foto do Usuário" class="img-fluid rounded-circle mb-4" width="100" height="100">
+            <div>
+                <p>
+                    Nome: <span id="nome"></span>
+                </p>
+            </div>
+            <div>
+                <p>
+                    Email: <span id="email"></span>
+                </p>
+            </div>
+            <div>
+                <p>
+                    Data Nascimento: <span id="nascimento"></span>
+                </p>
+            </div>
+            <div>
+                <p>
+                    Experiência: <span id="experiencia"></span>
+                </p>
+            </div>
+            <div>
+                <p>
+                    Nivel Ensino: <span id="ensino"></span>
+                </p>
+            </div>
+            <div>
+                <p>
+                    Idiomas: <span id="idiomas"></span>
+                </p>
+            </div>
+            <button class="btn btn-danger" id="excluir">Excluir conta</button>
+            <input type="hidden" name="id" id="id">
+            <a href="./editar_usuario.html"><button class="btn btn-primary">Editar cadastro</button></a>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-dark text-white text-center py-1">
+    <p class="m-0">&copy; 2023 Sistema de Intercâmbio</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="../js/meu_perfil.js"></script>
+</body>
+</html>
